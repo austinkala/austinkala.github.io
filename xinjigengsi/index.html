@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="心肌梗死的护理 - 专业全面的急性心肌梗死患者居家护理、术后康复及日常预防指南。包含疼痛护理、用药监测、饮食管理及紧急救护要点。">
+    <meta name="keywords" content="心肌梗死的护理,心肌梗死护理,心梗护理指南,冠心病康复,心脏病护理">
+    <title>心肌梗死的护理-专业康复指南与居家护理要点</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --primary-hover: #b71c1c;
+            --secondary-color: #2c3e50;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-light: #666666;
+            --border-color: #e0e0e0;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+            --radius: 8px;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--secondary-color);
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: var(--radius);
+            font-weight: 500;
+        }
+
+        .cta-button:hover {
+            background-color: var(--primary-hover);
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .emergency-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .emergency-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .emergency-text {
+            text-align: left;
+        }
+
+        .emergency-text strong {
+            display: block;
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+        }
+
+        .emergency-text span {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Main Content Grid */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem 0;
+            }
+            nav ul {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        /* Content Sections */
+        .content-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .content-card h2 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 1rem;
+        }
+
+        .content-card p {
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+
+        .step-list {
+            counter-reset: step;
+        }
+
+        .step-item {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-item::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2rem;
+            height: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 2rem;
+            font-weight: bold;
+        }
+
+        .step-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        /* Sidebar */
+        .sidebar-widget {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-widget h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .sidebar-menu li {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-menu li:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-menu a {
+            display: block;
+            padding: 0.75rem 0;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .sidebar-menu a:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+
+        /* Table Styles */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .info-table th, .info-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .info-table th {
+            background-color: #f1f3f5;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .info-table tr:hover {
+            background-color: #fafafa;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background-color: #ffebee;
+            border-left: 5px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 3rem 0;
+            margin-top: auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-col h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #e0e0e0;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-col ul li a {
+            color: #b0bec5;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #b0bec5;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                心康护理指南
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#care-tips">护理要点</a></li>
+                    <li><a href="#medication">用药管理</a></li>
+                    <li><a href="#diet">饮食建议</a></li>
+                    <li><a href="#rehab">康复训练</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="cta-button">在线咨询医生</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="emergency-box">
+                <div class="emergency-icon">🚑</div>
+                <div class="emergency-text">
+                    <strong>胸痛持续不缓解？请立即拨打急救电话</strong>
+                    <span>心肌梗死是急症，时间就是心肌，时间就是生命</span>
+                </div>
+            </div>
+            <h1>心肌梗死的护理：专业康复指南与居家护理要点</h1>
+            <p>科学的心肌梗死护理不仅能促进患者身体机能的快速恢复，还能有效预防并发症，降低再次发病的风险。本文为您提供从急性期到康复期的全方位护理指导。</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="main-grid">
+            <!-- Left Column: Main Content -->
+            <div class="content-area">
+                <article id="care-tips">
+                    <section class="content-card">
+                        <h2>急性期护理：黄金4小时的正确应对</h2>
+                        <p>心肌梗死发病后的护理首要任务是稳定生命体征。患者应绝对卧床休息，保持情绪稳定，避免任何体力活动。</p>
+                        
+                        <div class="warning-box">
+                            <h4>⚠️ 紧急警示</h4>
+                            <p>如果患者出现剧烈胸痛、大汗淋漓、濒死感或血压下降，需立即舌下含服硝酸甘油（若无低血压禁忌），并等待急救车。</p>
+                        </div>
+
+                        <h3>1. 体位与休息</h3>
+                        <ul class="step-list">
+                            <li class="step-item">
+                                <h3>半卧位休息</h3>
+                                <p>发病初期应采取半卧位或端坐位，双腿下垂，以减轻心脏负荷。避免平卧，防止回心血量增加加重心脏负担。</p>
+                            </li>
+                            <li class="step-item">
+                                <h3>吸氧支持</h3>
+                                <p>根据血氧饱和度监测情况，给予鼻导管吸氧，一般流量为2-4L/min，以改善心肌缺氧状态。</p>
+                            </li>
+                            <li class="step-item">
+                                <h3>严密监测</h3>
+                                <p>护理重点在于持续监测心率、心律、血压和血氧饱和度。注意观察有无呼吸困难、咳嗽、咳粉红色泡沫痰等左心衰竭征象。</p>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="content-card" id="medication">
+                        <h2>用药护理：科学管理心血管药物</h2>
+                        <p>心肌梗死患者出院后通常需要长期服用抗血小板、他汀类、β受体阻滞剂等药物。正确的用药护理是预防复发的基础。</p>
+                        
+                        <table class="info-table">
+                            <thead>
+                                <tr>
+                                    <th>药物类别</th>
+                                    <th>常见代表药物</th>
+                                    <th>护理要点</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>抗血小板药物</td>
+                                    <td>阿司匹林、氯吡格雷/替格瑞洛</td>
+                                    <td>需长期服用，注意观察有无牙龈出血、皮肤瘀斑等出血倾向。不可擅自停药。</td>
+                                </tr>
+                                <tr>
+                                    <td>他汀类药物</td>
+                                    <td>阿托伐他汀、瑞舒伐他汀</td>
+                                    <td>需在睡前服用。注意监测肝功能及肌肉酸痛情况。长期服用可稳定斑块。</td>
+                                </tr>
+                                <tr>
+                                    <td>硝酸酯类药物</td>
+                                    <td>硝酸甘油、单硝酸异山梨酯</td>
+                                    <td>心绞痛发作时舌下含服。注意直立性低血压，服药后平卧片刻。注意避光保存。</td>
+                                </tr>
+                                <tr>
+                                    <td>β受体阻滞剂</td>
+                                    <td>美托洛尔、比索洛尔</td>
+                                    <td>从小剂量开始，逐渐调整。监测心率及血压，防止心率过缓或低血压。</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section class="content-card" id="diet">
+                        <h2>饮食护理：低盐低脂与合理膳食</h2>
+                        <p>心肌梗死患者的饮食应以“低盐、低脂、低胆固醇、易消化”为原则，少食多餐，切忌暴饮暴食。</p>
+                        
+                        <h3>推荐食物</h3>
+                        <ul class="step-list">
+                            <li class="step-item">
+                                <h3>蔬菜水果</h3>
+                                <p>富含膳食纤维和维生素，有助于降低血脂，保持大便通畅。</p>
+                            </li>
+                            <li class="step-item">
+                                <h3>优质蛋白</h3>
+                                <p>如鱼肉、去皮禽肉、豆制品，提供身体修复所需的营养。</p>
+                            </li>
+                            <li class="step-item">
+                                <h3>全谷物</h3>
+                                <p>燕麦、糙米等，有助于控制血糖和胆固醇水平。</p>
+                            </li>
+                        </ul>
+
+                        <h3>禁忌食物</h3>
+                        <ul class="step-list">
+                            <li class="step-item">
+                                <h3>高脂肪食物</h3>
+                                <p>肥肉、动物内脏、油炸食品，易导致动脉粥样硬化加重。</p>
+                            </li>
+                            <li class="step-item">
+                                <h3>高盐食物</h3>
+                                <p>咸菜、腊肉、加工肉类，增加心脏负担，易诱发心衰。</p>
+                            </li>
+                            <li class="step-item">
+                                <h3>刺激性饮料</h3>
+                                <p>浓茶、浓咖啡、酒精，可能引起心率加快或血压波动。</p>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="content-card" id="rehab">
+                        <h2>康复训练：循序渐进恢复体力</h2>
+                        <p>心肌梗死康复训练应在医生评估后进行，遵循“循序渐进、量力而行”的原则。</p>
+                        
+                        <div class="warning-box">
+                            <h4>❌ 禁忌事项</h4>
+                            <p>在康复训练过程中，如果出现胸痛、胸闷、气短、头晕、心悸等症状，应立即停止运动并休息。若症状不缓解，需及时就医。</p>
+                        </div>
+
+                        <h3>运动处方建议</h3>
+                        <ol class="step-list">
+                            <li class="step-item">
+                                <h3>早期活动（住院期）</h3>
+                                <p>在生命体征稳定后，鼓励在床上进行肢体活动，逐步过渡到床边坐立、室内行走。</p>
+                            </li>
+                            <li class="step-item">
+                                <h3>中等强度（出院后1-3个月）</h3>
+                                <p>如散步、太极拳、慢跑。每次持续20-30分钟，每周3-5次。以运动时心率增加不超过20次/分为宜。</p>
+                            </li>
+                            <li class="step-item">
+                                <h3>维持期（3个月后）</h3>
+                                <p>可进行游泳、骑自行车等运动，保持规律锻炼，增强体质。</p>
+                            </li>
+                        </ol>
+                    </section>
+                </article>
+            </div>
+
+            <!-- Right Column: Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>护理分类导航</h3>
+                    <ul class="sidebar-menu">
+                        <li><a href="#">急性期急救护理</a></li>
+                        <li><a href="#">术后伤口护理</a></li>
+                        <li><a href="#">心理护理与疏导</a></li>
+                        <li><a href="#">家庭监护要点</a></li>
+                        <li><a href="#">预防复发指南</a></li>
+                        <li><a href="#">出院随访计划</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>常见问题解答 (FAQ)</h3>
+                    <div style="margin-bottom: 1rem;">
+                        <strong style="display:block; margin-bottom:0.25rem; color:var(--secondary-color);">Q: 心梗后多久可以洗澡？</strong>
+                        <span style="font-size:0.9rem; color:var(--text-light);">通常建议术后1-2周，身体恢复良好且无并发症后再洗。水温不宜过高，避免着凉。</span>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <strong style="display:block; margin-bottom:0.25rem; color:var(--secondary-color);">Q: 可以进行性生活吗？</strong>
+                        <span style="font-size:0.9rem; color:var(--text-light);">一般建议术后3-6个月，经医生评估心脏功能恢复良好后，可在体力允许的情况下进行。</span>
+                    </div>
+                    <div>
+                        <strong style="display:block; margin-bottom:0.25rem; color:var(--secondary-color);">Q: 便秘怎么办？</strong>
+                        <span style="font-size:0.9rem; color:var(--text-light);">多吃富含纤维的食物，适当活动。必要时可遵医嘱使用缓泻剂，切忌用力排便。</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget" style="background-color: #e3f2fd; border: 1px solid #bbdefb;">
+                    <h3 style="color: #1565c0;">预约复查</h3>
+                    <p style="font-size:0.9rem; margin-bottom:1rem; color:#555;">定期复查心电图、心脏彩超及血脂血糖，监控病情变化。</p>
+                    <a href="#" style="display:block; text-align:center; background-color: #1565c0; color:white; padding:0.75rem; border-radius:4px; font-weight:bold;">立即预约</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <p style="color: #b0bec5; font-size: 0.9rem; line-height: 1.8;">
+                        我们致力于提供权威、科学的心血管疾病护理知识，帮助患者及其家属更好地应对心肌梗死，提高生活质量。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>护理指南</h4>
+                    <ul>
+                        <li><a href="#">急性心肌梗死护理</a></li>
+                        <li><a href="#">心绞痛家庭护理</a></li>
+                        <li><a href="#">心脏康复训练</a></li>
+                        <li><a href="#">冠心病饮食调理</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>紧急联系</h4>
+                    <ul>
+                        <li><a href="#">全国急救电话：120</a></li>
+                        <li><a href="#">24小时胸痛中心热线</a></li>
+                        <li><a href="#">在线医生咨询</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 心康护理指南 版权所有 | 本页面信息仅供参考，不作为医疗诊断依据。具体治疗方案请遵医嘱。</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
