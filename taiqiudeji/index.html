@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台球的基本知识与打法 - 专业技巧与规则详解指南</title>
+    <meta name="description" content="本站提供台球的基本知识与打法全面指南，涵盖台球种类介绍、球杆选择、击球姿势、基本杆法（推杆、拉杆、定杆、缩杆）以及实战技巧。适合初学者入门及进阶爱好者参考。">
+    <meta name="keywords" content="台球的基本知识与打法,台球规则,台球技巧,台球入门,斯诺克,美式台球,Pocket Billiards">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #27ae60;
+            --bg-color: #f4f6f7;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-light: #666666;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0,0,0,0.05);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-main);
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .cta-btn {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #219150;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://picsum.photos/seed/pooltable/1920/600.jpg') center/cover no-repeat;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            padding: 10px 30px;
+            border-radius: 30px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: var(--container-width);
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+            color: var(--primary-color);
+        }
+
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .card-text {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        /* Knowledge List */
+        .knowledge-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .knowledge-item {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .knowledge-item h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .knowledge-item p {
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e8f5e9;
+            color: var(--accent-color);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* Sidebar */
+        .sidebar-widget {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        .sidebar-widget h3 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .ranking-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .ranking-list li:last-child {
+            border-bottom: none;
+        }
+
+        .ranking-num {
+            font-weight: bold;
+            color: var(--accent-color);
+            width: 25px;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: var(--card-bg);
+            margin-bottom: 15px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-light);
+            display: none;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--accent-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 50px 20px 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #bdc3c7;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+            }
+
+            nav ul {
+                margin: 15px 0;
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="logo">
+            <span>🎱</span> 台球百科
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#intro">台球简介</a></li>
+                <li><a href="#techniques">基本打法</a></li>
+                <li><a href="#rules">规则详解</a></li>
+                <li><a href="#equipment">器材选购</a></li>
+            </ul>
+        </nav>
+        <a href="#contact" class="cta-btn">联系我们</a>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>台球的基本知识与打法</h1>
+        <p>从零开始掌握台球技巧，了解不同类型台球的规则与打法，助您在球桌上运筹帷幄。</p>
+        <div class="hero-btns">
+            <a href="#intro" class="cta-btn">开始学习</a>
+            <a href="#techniques" class="btn-outline">观看技巧演示</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="grid-layout">
+            <!-- Main Content -->
+            <div class="content-area">
+                
+                <!-- Introduction -->
+                <section id="intro">
+                    <h2 class="section-title">台球基础概览</h2>
+                    <div class="knowledge-list">
+                        <article class="knowledge-item">
+                            <h3>什么是台球？</h3>
+                            <p>台球（Pool）也称撞球或弹球，是一项在长方形台面上，用球杆击打白色主球，使其撞击其他彩球并使彩球落入袋中的室内体育运动。它不仅考验选手的物理计算能力，更是一种心理博弈。</p>
+                            <span class="tag">运动起源</span>
+                        </article>
+                        <article class="knowledge-item">
+                            <h3>台球的分类</h3>
+                            <p>台球主要分为三大类：斯诺克、美式台球（8球、9球、10球）和开仑台球。不同类型的台球在球桌尺寸、球的数量、规则和打法上都有显著差异。</p>
+                            <span class="tag">斯诺克</span>
+                            <span class="tag">美式台球</span>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Basic Techniques -->
+                <section id="techniques">
+                    <h2 class="section-title">核心基本打法</h2>
+                    <div class="card-grid">
+                        <div class="card">
+                            <img src="https://picsum.photos/seed/stroke/400/250.jpg" alt="击球姿势" class="card-img">
+                            <div class="card-content">
+                                <h3 class="card-title">标准击球姿势</h3>
+                                <p class="card-text">良好的姿势是打好台球的基础。双脚分开与肩同宽，身体前倾，手架稳固，击球时保持手臂水平，切忌僵硬。</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://picsum.photos/seed/aim/400/250.jpg" alt="瞄准方法" class="card-img">
+                            <div class="card-content">
+                                <h3 class="card-title">瞄准与假想线</h3>
+                                <p class="card-text">通过球心连接目标球和袋口中心形成一条“假想线”。击球时，主球中心点应沿着这条线击打目标球。使用“库边点”辅助瞄准也是常用技巧。</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://picsum.photos/seed/slice/400/250.jpg" alt">侧旋球" class="card-img">
+                            <div class="card-content">
+                                <h3 class="card-title">侧旋与走位</h3>
+                                <p class="card-text">通过偏击球杆不同部位产生侧旋（左旋、右旋），使主球撞击目标球后产生偏转，从而控制主球落点，为下一杆做铺垫。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Common Techniques Detail -->
+                <section id="common-techniques">
+                    <h2 class="section-title">常用杆法详解</h2>
+                    <div class="knowledge-list">
+                        <div class="knowledge-item">
+                            <h3>推杆</h3>
+                            <p>最基础的杆法。击打主球中心点，击球后主球直线向前运动。这是进行直线进球和简单走位时的首选动作。</p>
+                        </div>
+                        <div class="knowledge-item">
+                            <h3>定杆</h3>
+                            <p>击打主球中上部，利用摩擦力使主球在撞击目标球后瞬间停止。常用于需要精确控制主球停留在特定位置的情况。</p>
+                        </div>
+                        <div class="knowledge-item">
+                            <h3>缩杆</h3>
+                            <p>俗称“拉杆”或“回旋”。击打主球中下部，利用球杆对球的摩擦力，使主球在撞击目标球后倒退。这是台球中最具观赏性的技巧之一。</p>
+                        </div>
+                        <div class="knowledge-item">
+                            <h3>高杆低杆加塞</h3>
+                            <p>综合运用高杆、低杆和侧旋。例如“低杆右塞”，击球后主球会向右下方旋转移动，实现复杂的库边反弹走位。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Rules -->
+                <section id="rules">
+                    <h2 class="section-title">常见规则简介</h2>
+                    <article class="knowledge-item">
+                        <h3>8球规则</h3>
+                        <p>最常见的美式台球玩法。玩家分为全色球和花色球。通过打进自己的球并最后打进黑8获胜。犯规需将球放回原位或自由球。</p>
+                    </article>
+                    <article class="knowledge-item">
+                        <h3>斯诺克规则</h3>
+                        <p>使用22个球（1个白球，15个红球，6个彩球）。红球入袋得1分，彩球入袋根据分值得分。目标是获得尽可能高的总分。斯诺克球台较小，难度较高。</p>
+                    </article>
+                </section>
+
+                <!-- Equipment -->
+                <section id="equipment">
+                    <h2 class="section-title">器材选购指南</h2>
+                    <div class="knowledge-list">
+                        <div class="knowledge-item">
+                            <h3>球杆</h3>
+                            <p>选择球杆时，应关注杆身的重量（通常14-18盎司）、平衡点以及材质。新手建议选择稍硬、弹性适中的球杆。</p>
+                        </div>
+                        <div class="knowledge-item">
+                            <h3>巧粉</h3>
+                            <p>用于吸附杆头水分和增加摩擦力，防止滑杆。根据杆头直径选择合适的巧粉，打滑时及时使用。</p>
+                        </div>
+                        <div class="knowledge-item">
+                            <h3>球桌</h3>
+                            <p>正规比赛使用墨绿色的台呢。桌面需水平，库边弹性一致。家用选择时，需考虑空间大小和台面平整度。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FAQ Section -->
+                <section id="faq">
+                    <h2 class="section-title">常见问题 (FAQ)</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">初学者应该先学哪种打法？</div>
+                        <div class="faq-answer">建议先从美式台球的8球开始，规则相对简单，器材普及度高，容易上手。待熟悉台感和力度控制后，再尝试斯诺克。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">击球时总是打滑怎么办？</div>
+                        <div class="faq-answer">这通常是巧粉失效或杆头需要修补导致的。请检查杆头是否平整，及时打磨或更换巧粉，确保击球面与球杆轴线垂直。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">如何提高瞄准的准确性？</div>
+                        <div class="faq-answer">多进行空杆练习（不击打目标球，只击打主球通过假想线）。保持头部稳定，不要在击球瞬间移动眼睛，学会用余光观察。</div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>热门技巧排行</h3>
+                    <ul class="ranking-list">
+                        <li><span class="ranking-num">1</span> <span>如何练习高杆定杆</span></li>
+                        <li><span class="ranking-num">2</span> <span>斯诺克贴库走位技巧</span></li>
+                        <li><span class="ranking-num">3</span> <span>美式台球开球技巧</span></li>
+                        <li><span class="ranking-num">4</span> <span>如何防守对手</span></li>
+                        <li><span class="ranking-num">5</span> <span>球杆保养与清洁</span></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>新手入门贴士</h3>
+                    <ul class="ranking-list">
+                        <li><span>✓</span> 站位时脚尖指向目标球方向</li>
+                        <li><span>✓</span> 击球前深呼吸，保持冷静</li>
+                        <li><span>✓</span> 多看职业选手的比赛录像</li>
+                        <li><span>✓</span> 不要急于发力，先求准度</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget" id="contact">
+                    <h3>获取更多帮助</h3>
+                    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">如果您在练习中遇到具体问题，欢迎通过以下方式咨询。</p>
+                    <a href="#" class="cta-btn" style="display:block; text-align:center; width:100%;">提交问题</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <h4>台球百科</h4>
+            <p style="color: #bdc3c7; font-size: 0.9rem;">致力于为台球爱好者提供最全面、最专业的知识与技巧分享。</p>
+        </div>
+        <div class="footer-col">
+            <h4>快速导航</h4>
+            <ul>
+                <li><a href="#intro">台球简介</a></li>
+                <li><a href="#techniques">基本打法</a></li>
+                <li><a href="#rules">规则详解</a></li>
+                <li><a href="#equipment">器材选购</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>相关资源</h4>
+            <ul>
+                <li><a href="#">在线练习台</a></li>
+                <li><a href="#">器材商城</a></li>
+                <li><a href="#">比赛日程</a></li>
+                <li><a href="#">社区论坛</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        &copy; 2023 台球百科. 保留所有权利. 本页面仅供学习与参考.
+    </div>
+</footer>
+
+<script>
+    // FAQ Toggle Logic
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // Close other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+              </html>
