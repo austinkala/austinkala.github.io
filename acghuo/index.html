@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="acg火影之纲手性监狱2 - 专注于火影同人漫画《纲手性监狱2》的在线阅读与资源分享。提供高清大图、剧情解析、角色分析及同人创作展示。">
+    <meta name="keywords" content="acg火影之纲手性监狱2,纲手性监狱2,火影同人漫画,纲手同人,ACG漫画,在线阅读">
+    <title>acg火影之纲手性监狱2 - 高清同人漫画在线阅读与资源站</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #d35400;
+            --bg-color: #f4f6f7;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-radius: 8px;
+            --container-width: 1200px;
+            --spacing-unit: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-menu a {
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: var(--accent-color);
+        }
+
+        .search-box {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .search-box {
+                display: block;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #e67e22;
+            transform: translateY(-2px);
+        }
+
+        /* Filter Tabs */
+        .filter-section {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 20px;
+            border: 1px solid #eee;
+            background: transparent;
+            border-radius: 20px;
+            cursor: pointer;
+            color: var(--text-secondary);
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* Main Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            background-color: #eee;
+            position: relative;
+        }
+
+        .card-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 4px 8px;
+            font-size: 0.8rem;
+            border-radius: 4px;
+        }
+
+        .card-body {
+            padding: 16px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            flex: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #888;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 12px;
+        }
+
+        .card-actions {
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-sm {
+            flex: 1;
+            padding: 8px 0;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Chapter List Section */
+        .chapter-list-section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            margin-bottom: 40px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        .chapter-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .chapter-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            background: #fafafa;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .chapter-item:hover {
+            background: #f0f0f0;
+        }
+
+        .chapter-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chapter-name {
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .chapter-date {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .chapter-link {
+            padding: 6px 16px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: #fff;
+            padding: 40px;
+            border-radius: var(--border-radius);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #bbb;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .filter-section {
+                flex-direction: column;
+            }
+            
+            .filter-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">ACG<span>漫画</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">最新章节</a></li>
+                    <li><a href="#">热门排行</a></li>
+                    <li><a href="#">分类浏览</a></li>
+                    <li><a href="#">作者专区</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索漫画..." style="padding: 8px 15px; border: 1px solid #ddd; border-radius: 20px;">
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>acg火影之纲手性监狱2</h1>
+            <p>深入探索火影同人精彩世界，高清连载《纲手性监狱2》章节解析与阅读指南。</p>
+            <a href="#latest" class="btn">立即阅读最新章节</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- Filter -->
+        <div class="filter-section">
+            <button class="filter-btn active">全部</button>
+            <button class="filter-btn">最新更新</button>
+            <button class="filter-btn">高人气</button>
+            <button class="filter-btn">短篇</button>
+            <button class="filter-btn">长篇连载</button>
+        </div>
+
+        <!-- Content Grid -->
+        <section class="content-grid" id="latest">
+            <!-- Card 1 -->
+            <article class="card">
+                <div class="card-image">
+                    <img src="https://picsum.photos/seed/naruto1/400/500" alt="纲手性监狱2 封面">
+                    <span class="card-tag">连载中</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">火影之纲手性监狱2 第24章：羁绊的试炼</h3>
+                    <p class="card-desc">纲手与历代火影的灵魂在异界展开对话，面对未知的黑暗，她必须重新审视自己的忍道...</p>
+                    <div class="card-meta">
+                        <span>2023-10-24</span>
+                        <span>2.3万人气</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-sm btn-outline">详情</a>
+                        <a href="#" class="btn btn-sm">阅读</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+                <div class="card-image">
+                    <img src="https://picsum.photos/seed/naruto2/400/500" alt="纲手性监狱2 封面">
+                    <span class="card-tag">热门</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">纲手性监狱2 第23章：千手之力觉醒</h3>
+                    <p class="card-desc">战斗进入白热化阶段，纲手体内的封印松动，传说中的百豪之术即将展现惊人威力。</p>
+                    <div class="card-meta">
+                        <span>2023-10-20</span>
+                        <span>1.8万人气</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-sm btn-outline">详情</a>
+                        <a href="#" class="btn btn-sm">阅读</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+                <div class="card-image">
+                    <img src="https://picsum.photos/seed/naruto3/400/500" alt="纲手性监狱2 封面">
+                    <span class="card-tag">短篇</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">纲手性监狱2：温泉篇番外</h3>
+                    <p class="card-desc">在紧张的战斗间隙，纲手与小樱在温泉中的短暂休憩，温馨又搞笑的日常。</p>
+                    <div class="card-meta">
+                        <span>2023-10-15</span>
+                        <span>9000人气</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-sm btn-outline">详情</a>
+                        <a href="#" class="btn btn-sm">阅读</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card">
+                <div class="card-image">
+                    <img src="https://picsum.photos/seed/naruto4/400/500" alt="纲手性监狱2 封面">
+                    <span class="card-tag">连载中</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">纲手性监狱2 第22章：暗部潜入</h3>
+                    <p class="card-desc">为了寻找解药，纲手潜入敌对组织的基地，一场无声的猎杀战即将打响。</p>
+                    <div class="card-meta">
+                        <span>2023-10-10</span>
+                        <span>1.5万人气</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-sm btn-outline">详情</a>
+                        <a href="#" class="btn btn-sm">阅读</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Chapter List Section -->
+        <section class="chapter-list-section">
+            <div class="section-header">
+                <h2 class="section-title">热门章节推荐</h2>
+                <a href="#" style="color: var(--accent-color); font-weight: 500;">查看更多 &rarr;</a>
+            </div>
+            <div class="chapter-list">
+                <div class="chapter-item">
+                    <div class="chapter-info">
+                        <span class="chapter-name">第25章：命运的交汇</span>
+                        <span class="chapter-date">2023-10-28 更新</span>
+                    </div>
+                    <a href="#" class="chapter-link">阅读</a>
+                </div>
+                <div class="chapter-item">
+                    <div class="chapter-info">
+                        <span class="chapter-name">第24章：羁绊的试炼</span>
+                        <span class="chapter-date">2023-10-24 更新</span>
+                    </div>
+                    <a href="#" class="chapter-link">阅读</a>
+                </div>
+                <div class="chapter-item">
+                    <div class="chapter-info">
+                        <span class="chapter-name">第23章：千手之力觉醒</span>
+                        <span class="chapter-date">2023-10-20 更新</span>
+                    </div>
+                    <a href="#" class="chapter-link">阅读</a>
+                </div>
+                <div class="chapter-item">
+                    <div class="chapter-info">
+                        <span class="chapter-name">第22章：暗部潜入</span>
+                        <span class="chapter-date">2023-10-10 更新</span>
+                    </div>
+                    <a href="#" class="chapter-link">阅读</a>
+                </div>
+                <div class="chapter-item">
+                    <div class="chapter-info">
+                        <span class="chapter-name">第21章：医疗忍者的极限</span>
+                        <span class="chapter-date">2023-10-05 更新</span>
+                    </div>
+                    <a href="#" class="chapter-link">阅读</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info/Analysis Section -->
+        <section class="chapter-list-section">
+            <div class="section-header">
+                <h2 class="section-title">作品解析与设定</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <article>
+                    <h4 style="margin-bottom: 10px; color: var(--primary-color);">角色深度分析：纲手</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        在《acg火影之纲手性监狱2》中，纲手不再是单纯的医疗忍者，她被卷入了一个关于“灵魂监狱”的阴谋。本作着重描写了她作为五代火影的孤独与作为女性的情感挣扎，以及面对强大敌人时不得不展现的暴力美学。
+                    </p>
+                </article>
+                <article>
+                    <h4 style="margin-bottom: 10px; color: var(--primary-color);">剧情走向预测</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        随着剧情推进，纲手将逐渐揭开“性监狱”背后的真相，这可能与火影世界的某种古老封印有关。接下来的章节预计将引入更多原著中的S级叛忍角色，战斗场面将更加宏大。
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="section-header">
+                <h2 class="section-title">常见问题 (FAQ)</h2>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">1. 《纲手性监狱2》在哪里可以看？</div>
+                <div class="faq-answer">本站提供《acg火影之纲手性监狱2》的高清正版连载阅读。请关注我们的更新日历，确保第一时间阅读最新章节。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">2. 作品是否与官方火影剧情冲突？</div>
+                <div class="faq-answer">本作品为同人创作，基于火影忍者原著世界观，但在时间线和部分角色设定上进行了虚构和拓展，属于非官方衍生内容。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">3. 如何参与同人投稿？</div>
+                <div class="faq-answer">如果您有关于纲手或火影的优秀同人作品，欢迎通过我们的“投稿专区”提交审核，优秀作品有机会获得推荐位。</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>ACG漫画</h4>
+                    <p style="color: #bbb; font-size: 0.9rem; line-height: 1.8;">
+                        专注火影忍者同人作品分享，致力于为ACG爱好者提供最优质的阅读体验。收录各类同人小说、漫画、插画。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">最新章节</a></li>
+                        <li><a href="#">排行榜</a></li>
+                        <li><a href="#">分类浏览</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">网站简介</a></li>
+                        <li><a href="#">投稿指南</a></li>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">联系合作</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 ACG同人漫画站. All Rights Reserved. 本站资源均来自互联网，仅供学习交流使用，请于下载后24小时内删除。
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple interaction for filter buttons
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                // In a real app, this would filter the content grid
+                console.log('Filter selected:', btn.innerText);
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+  </html>
